@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
+// Client component for theme toggle functionality
 export function ThemeToggle() {
   const [theme, setTheme] = useState<"light" | "dark">("light");
   const [mounted, setMounted] = useState(false);
@@ -85,4 +86,9 @@ export function ThemeToggle() {
       )}
     </Button>
   );
+}
+
+// Server component wrapper
+export function ThemeToggleWrapper() {
+  return <ThemeToggle />;
 } 

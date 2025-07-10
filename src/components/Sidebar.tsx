@@ -1,29 +1,8 @@
-"use client";
-
-import { useEffect } from "react";
 import Link from "next/link";
-import { usePathname, useRouter } from "next/navigation";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
+import { ThemeToggleWrapper } from "@/components/ui/theme-toggle";
+import { ActiveLink } from "@/components/ActiveLink";
 
 export default function Sidebar() {
-  const pathname = usePathname();
-  const router = useRouter();
-
-  // Helper to check if a link is active
-  const isActive = (path: string) => {
-    // For the home page
-    if (path === "/" && pathname === "/") {
-      return true;
-    }
-
-    // For other top-level pages
-    if (path !== "/" && pathname.startsWith(path)) {
-      return true;
-    }
-
-    return false;
-  };
-
   return (
     <div className="sidebar text-center flex flex-col h-full relative">
       {/* Main centered content */}
@@ -54,40 +33,19 @@ export default function Sidebar() {
 
         <nav className="space-y-4">
           <div className="space-y-3">
-            <Link
-              href="/research"
-              className={`block py-1 ${
-                isActive("/research") ? "font-bold" : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              Research
-            </Link>
-            <Link
-              href="/team"
-              className={`block py-1 ${
-                isActive("/team") ? "font-bold" : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              Team
-            </Link>
+            <ActiveLink href="/research">Research</ActiveLink>
+            <ActiveLink href="/team">Team</ActiveLink>
           </div>
 
           <div className="pt-4">
-            <Link
-              href="/app-development"
-              className={`block py-1 ${
-                isActive("/app-development") ? "font-bold" : "text-muted-foreground hover:text-foreground"
-              }`}
-            >
-              App Development
-            </Link>
+            <ActiveLink href="/app-development">App Development</ActiveLink>
           </div>
         </nav>
       </div>
 
-      {/* Theme Toggle - positioned absolutely at bottom right */}
-      <div className="absolute bottom-6 right-6 flex flex-col items-center space-y-2">
-        <ThemeToggle />
+      {/* Theme Toggle - centered at bottom */}
+      <div className="absolute bottom-6 left-0 right-0 flex flex-col items-center space-y-2">
+        <ThemeToggleWrapper />
         <span className="text-xs text-muted-foreground">Theme</span>
       </div>
     </div>
