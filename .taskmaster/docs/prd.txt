@@ -1,0 +1,159 @@
+<context>
+# Overview  
+ScrubsLabs is a Next.js-based company website and platform for a cutting-edge AI-powered native app development agency that specializes in intelligent mobile application development. The platform serves multiple purposes: showcasing the company's AI development capabilities, and serving as a lead generation hub for potential clients.
+
+The platform addresses the challenge of complex, time-consuming app development by leveraging AI to streamline iOS and Android development, automate code generation, optimize user experiences, and accelerate development workflows. It targets businesses, startups, and entrepreneurs who want to build powerful native mobile applications without the traditional complexity, timeline, or costs.
+
+# Core Features  
+## Public Development Website
+- **Service Showcase**: Clear presentation of AI-powered app development services (iOS, Android, cross-platform)
+- **Development Demonstrations**: Interactive demos showing AI-powered development workflows and capabilities
+- **Case Studies & Portfolio**: Client success stories, app showcases, and development achievements
+- **Service Packages**: Tiered pricing for different app complexity levels and business requirements
+
+## Direct Client Communication
+- **Consultation System**: Streamlined consultation booking and project scoping workflows  
+- **Project Delivery**: Direct delivery of development services with regular progress updates and milestones
+- **Client Support**: Dedicated support channels for ongoing app maintenance and optimization
+
+## AI Development Platform
+- **iOS Native Development**: AI-enhanced Swift development with optimized user experiences and performance
+- **Android Native Development**: Intelligent Kotlin/Java development with Material Design implementation
+- **Code Generation**: AI-powered creation of app components, API integrations, and user interface elements
+- **Testing & Quality Assurance**: Automated testing, performance optimization, and bug detection
+
+# User Experience  
+## User Personas
+- **Startup Founders**: Entrepreneurs needing native mobile apps without hiring full development teams
+- **Product Managers**: Professionals seeking to accelerate app development through AI assistance
+- **Small-Medium Businesses**: Companies wanting custom mobile applications for their services
+- **Enterprise Teams**: Larger organizations looking to rapidly prototype and develop mobile solutions
+
+## Key User Flows
+- **Discovery Flow**: Homepage → Development demos → Portfolio/case studies → Contact/consultation booking
+- **Project Flow**: Initial consultation → Scope definition → Development phases → App store deployment
+- **Client Communication**: Regular progress updates → Milestone reviews → Feature adjustments → Ongoing maintenance
+- **Lead Generation**: Contact forms → Technical consultation → Project proposal → Contract signing
+
+## UI/UX Considerations
+- Professional, modern design reflecting technical expertise and AI innovation
+- Clear value proposition and development timeline demonstrations throughout the user journey
+- Responsive design optimized for business and technical decision-makers
+- Trust-building elements: portfolio showcase, technical certifications, client testimonials, app store links
+</context>
+
+<PRD>
+# Technical Architecture  
+## System Components
+- **Frontend**: Next.js 15 with App Router, TypeScript, Tailwind CSS
+- **Communication System**: Contact forms, consultation booking, and lead capture systems
+- **UI Framework**: Radix UI components with shadcn/ui for professional business styling
+- **Animation System**: Custom motion components for engaging marketing presentations
+- **Content Management**: System for case studies, blog posts, and service updates
+- **Reporting Tools**: Client communication and service delivery tracking
+
+## Data Models
+- **Client Profiles**: Account information, service packages, billing, campaign preferences
+- **Campaign Data**: Automation settings, performance metrics, content libraries
+- **Lead Management**: Contact information, consultation status, proposal tracking
+- **Service Content**: Package details, pricing tiers, feature comparisons
+
+## APIs and Integrations
+- **Communication APIs**: Contact forms, email notifications, and client communication tools
+- **Social Media APIs**: Integration with Facebook, Instagram, LinkedIn, Twitter, TikTok for automation
+- **Email Marketing APIs**: Integration with platforms like Mailchimp, ConvertKit, or custom SMTP
+- **CRM Integration**: Lead management and client relationship tracking
+- **Analytics APIs**: Performance tracking and ROI measurement tools
+- **AI Content APIs**: Integration with OpenAI, Claude, or custom models for content generation
+- **Calendar Integration**: Consultation booking and client meeting scheduling
+
+## Infrastructure Requirements
+- **Hosting**: Vercel deployment with serverless functions for scalability
+- **Database**: PostgreSQL or MongoDB for client data and campaign management
+- **CDN**: Asset optimization for marketing materials and case study media
+- **Security**: Enterprise-grade security for client data and automation credentials
+- **Performance**: Fast loading for marketing conversion optimization
+
+# Development Roadmap  
+## Phase 1: Professional Marketing Website (MVP)
+- Modern homepage showcasing AI automation services and value proposition
+- Service pages detailing social media, email, and marketing automation offerings
+- Case studies page with client success stories and ROI demonstrations
+- Contact forms and consultation booking system
+- Professional about/team page establishing credibility
+- Privacy policy, terms of service, and compliance pages
+
+## Phase 2: Client Communication & Lead Management
+- Enhanced lead capture and management system with CRM functionality
+- Consultation scheduling and proposal delivery system
+- Client communication tools for service delivery and updates
+- Reporting system for sharing campaign performance with clients
+- Email automation for client onboarding and ongoing communication
+
+## Phase 3: AI Automation Tools Integration
+- Social media automation dashboard with posting and scheduling capabilities
+- Email marketing automation with AI-generated content and sequences
+- Content generation tools for social media posts and marketing copy
+- Campaign performance analytics and ROI tracking
+- Client self-service tools for basic automation configuration
+
+## Phase 4: Advanced Automation & Analytics
+- Advanced AI-powered content personalization and optimization
+- Multi-platform social media automation with cross-platform analytics
+- Advanced email marketing with behavioral triggers and segmentation
+- White-label solutions for partner agencies
+- API access for enterprise clients and custom integrations
+
+# Logical Dependency Chain
+## Foundation First (Critical Path)
+1. **Professional Website Foundation**: Next.js setup, professional design system, responsive layout
+2. **Service Presentation**: Clear service descriptions, pricing, value propositions
+3. **Lead Capture System**: Contact forms, consultation booking, initial CRM setup
+4. **Trust Building Elements**: Case studies, testimonials, professional branding
+
+## Client Acquisition Focus
+5. **SEO & Content Marketing**: Blog system, service pages optimized for search
+6. **Conversion Optimization**: Landing pages, call-to-action optimization, A/B testing capability
+7. **Client Communication**: Service delivery workflows, client reporting systems, payment processing
+
+## Automation Platform Development
+8. **Client Reporting**: Performance dashboards, service delivery tracking, communication tools
+9. **AI Automation Integration**: Social media APIs, email marketing, content generation
+10. **Advanced Analytics**: Performance tracking, ROI calculation, client retention tools
+
+# Risks and Mitigations  
+## Technical Challenges
+- **API Integration Complexity**: Start with one platform (e.g., Instagram) before expanding to multiple social networks
+- **AI Content Quality**: Implement content review workflows and quality controls
+- **Scalability Concerns**: Design system architecture to handle multiple client campaigns simultaneously
+
+## Business Model Validation
+- **Service-Market Fit**: Begin with a focused service offering (e.g., just social media automation) before expanding
+- **Pricing Strategy**: Start with competitive pricing to gain market share, then optimize based on value delivery
+- **Client Retention**: Focus on demonstrable ROI and excellent customer service
+
+## Competitive Landscape
+- **Market Differentiation**: Emphasize AI sophistication and personalized service over generic automation tools
+- **Feature Development**: Prioritize features that provide clear competitive advantages
+- **Partnership Strategy**: Consider integrations with existing marketing tools rather than competing directly
+
+# Appendix  
+## Market Research Findings
+- Social media marketing automation market growing at 12% CAGR
+- Small businesses spend 3-5 hours daily on manual social media tasks
+- Email marketing automation shows average ROI of $42 for every $1 spent
+- 76% of businesses want better marketing automation but find current tools too complex
+
+## Technical Specifications
+- Next.js 15 with App Router for modern React development
+- Contact forms and client communication systems for seamless service delivery
+- Vercel deployment for optimal performance and scaling
+- TypeScript for type safety and developer experience
+- Tailwind CSS for consistent, professional styling
+- Integration capabilities with major social media and email marketing platforms
+
+## Service Differentiation
+- **AI-First Approach**: Advanced AI for content creation and campaign optimization
+- **White-Glove Service**: Personalized setup and ongoing optimization support
+- **ROI Transparency**: Clear analytics and performance reporting
+- **Platform Agnostic**: Works across all major social media and email platforms 
