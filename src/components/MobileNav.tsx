@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,15 +34,18 @@ export default function MobileNav() {
             </div>
           </Link>
           <span className="text-lg font-medium">ScrubsHub</span>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="w-6 h-6 flex flex-col justify-center items-center gap-1"
-            aria-label="Toggle navigation menu"
-          >
-            <span className={`w-5 h-0.5 bg-foreground transition-transform ${isOpen ? 'rotate-45 translate-y-1' : ''}`} />
-            <span className={`w-5 h-0.5 bg-foreground transition-opacity ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
-            <span className={`w-5 h-0.5 bg-foreground transition-transform ${isOpen ? '-rotate-45 -translate-y-1' : ''}`} />
-          </button>
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="w-6 h-6 flex flex-col justify-center items-center gap-1"
+              aria-label="Toggle navigation menu"
+            >
+              <span className={`w-5 h-0.5 bg-foreground transition-transform ${isOpen ? 'rotate-45 translate-y-1' : ''}`} />
+              <span className={`w-5 h-0.5 bg-foreground transition-opacity ${isOpen ? 'opacity-0' : 'opacity-100'}`} />
+              <span className={`w-5 h-0.5 bg-foreground transition-transform ${isOpen ? '-rotate-45 -translate-y-1' : ''}`} />
+            </button>
+          </div>
         </div>
       </div>
 
